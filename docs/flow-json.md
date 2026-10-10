@@ -157,4 +157,4 @@ gives the same flow twice.
 
 Task-list items are written to DOCX as a list level without a number or bullet, and the item text
 starts with ☐ (open) or ☒ (done); reading treats any list item that starts with ☐, ☑ or ☒ as a
-task item.
+task item. (PDF and PNG output draw ☐ / ☒ with whatever loaded font has them.)
