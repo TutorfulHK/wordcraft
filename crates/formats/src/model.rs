@@ -274,7 +274,8 @@ pub fn char_props(f: &Fmt) -> CharProps {
     }
 }
 
-fn code_style() -> Style {
+/// The `Code` paragraph style the flow importers add for code blocks.
+pub fn code_style() -> Style {
     Style {
         id: CODE_STYLE.into(),
         name: CODE_STYLE.into(),
@@ -530,7 +531,8 @@ fn effective(doc: &Document, cp: &CharProps) -> CharProps {
     out
 }
 
-fn fmt_of(doc: &Document, cp: &CharProps, in_code: bool) -> Fmt {
+/// A run's formatting as the flow model expresses it (`in_code`: the paragraph is a code line).
+pub fn fmt_of(doc: &Document, cp: &CharProps, in_code: bool) -> Fmt {
     let e = effective(doc, cp);
     let code = !in_code && e.font.as_deref().is_some_and(is_mono);
     Fmt {
@@ -579,7 +581,8 @@ pub fn para_kind(doc: &Document, p: &Paragraph) -> (Kind, Option<ListInfo>) {
     (kind, list)
 }
 
-fn media_ext(key: &str, data: &[u8]) -> String {
+/// File extension of embedded media (`png`, `jpeg`…), sniffed from the bytes, else from its key.
+pub fn media_ext(key: &str, data: &[u8]) -> String {
     match image::guess_format(data) {
         Ok(image::ImageFormat::Png) => "png".into(),
         Ok(image::ImageFormat::Jpeg) => "jpeg".into(),

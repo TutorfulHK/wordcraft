@@ -154,6 +154,9 @@ pub struct Session {
     pub merge: crate::cmd::mailings::MergeState,
     /// Requests from commands to the UI (open a dialog, scroll…), drained by the front end.
     pub ui_requests: Vec<Value>,
+    /// Media bytes staged for the next `file.fromFlow`, by flow media id (hosts that pass raw
+    /// bytes instead of base64; see `crates/wasm`).
+    pub flow_media: std::collections::BTreeMap<String, Arc<Vec<u8>>>,
 }
 
 /// Maximum undo depth.
@@ -197,6 +200,7 @@ impl Session {
             bib_style: "APA".into(),
             merge: Default::default(),
             ui_requests: Vec::new(),
+            flow_media: Default::default(),
         }
     }
 
