@@ -24,6 +24,7 @@ wordcraft-proof = { path = "crates/proof" }
 wordcraft-engine = { path = "crates/engine" }
 wordcraft-mcp = { path = "crates/mcp" }
 wordcraft-ui-egui = { path = "crates/ui-egui" }
+wordcraft-wasm = { path = "crates/wasm" }
 
 # foundation
 kurbo = { version = "0.13", features = ["serde"] }
@@ -75,3 +76,11 @@ opt-level = 3
 lto = "thin"
 codegen-units = 16
 debug = 0
+
+# The headless WebAssembly library (`crates/wasm`, packaging/wasm): smallest code over speed.
+[profile.wasm-release]
+inherits = "release"
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+panic = "abort"
