@@ -1,0 +1,19 @@
+[package]
+name = "wordcraft-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "WordCraft as a headless WebAssembly library: open and save DOCX (and ODT, RTF, HTML, Markdown, text), export PDF with embedded fonts, convert to and from Flow JSON, render page PNGs"
+publish = false
+
+[lints]
+workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wordcraft-engine = { workspace = true }
+wordcraft-fonts = { workspace = true }
+serde_json = { workspace = true }
+wasm-bindgen = "0.2"

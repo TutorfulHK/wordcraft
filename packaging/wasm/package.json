@@ -1,0 +1,29 @@
+{
+  "name": "@tutorfulhk/wordcraft-wasm",
+  "version": "0.0.0-template",
+  "description": "WordCraft as a headless WebAssembly library: open and save DOCX, export PDF with embedded fonts, convert to and from Flow JSON (a block tree for rich-text editors), render page PNGs.",
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TutorfulHK/wordcraft.git",
+    "directory": "crates/wasm"
+  },
+  "type": "module",
+  "main": "wordcraft_wasm.js",
+  "module": "wordcraft_wasm.js",
+  "types": "wordcraft_wasm.d.ts",
+  "files": [
+    "wordcraft_wasm.js",
+    "wordcraft_wasm.d.ts",
+    "wordcraft_wasm_bg.wasm",
+    "wordcraft_wasm_bg.wasm.d.ts",
+    "README.md",
+    "LICENSE-MIT",
+    "LICENSE-APACHE",
+    "NOTICE"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

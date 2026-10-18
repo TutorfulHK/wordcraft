@@ -279,6 +279,12 @@ impl Counters {
         }
         Some((label, def))
     }
+
+    /// The current value of `num`/`level` (what [`Counters::next_label`] last numbered there).
+    pub fn value(&self, numbering: &Numbering, num: u32, level: u8) -> Option<u32> {
+        let abs = numbering.abstract_of(num)?;
+        self.state.get(&abs.id)?.get((level as usize).min(8)).copied()
+    }
 }
 
 #[cfg(test)]

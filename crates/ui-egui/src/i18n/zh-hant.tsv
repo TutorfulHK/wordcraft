@@ -184,8 +184,10 @@
 	Distribute Rows	平均分配列高
 	Distributed	分散對齊
 	Do Not Show in TOC	不在目錄中顯示
+	Document as Flow	文件的 Flow 結構
 	Document End	文件結尾
 	Document Formatting	文件格式設定
+	Document from Flow	從 Flow 結構建立文件
 	Document Property	文件摘要資訊
 	Document Start	文件開頭
 	Document Text	文件文字
@@ -384,6 +386,7 @@
 	Match case	大小寫須相符
 	Match Fields	對應欄位
 	Matrix	矩陣
+	Media Bytes	媒體位元組資料
 	Merge	合併
 	Merge Cells	合併儲存格
 	Merge Formatting	合併格式設定
@@ -439,6 +442,7 @@
 	One	一欄
 	One Page	單頁
 	Open	開啟
+	Open from Bytes	從位元組資料開啟
 	OpenDocument Text (*.odt)	OpenDocument 文字 (*.odt)
 	Optional Hyphen	選擇性連字號
 	Options	選項
@@ -572,6 +576,7 @@
 	Save a copy in another format. Printing goes through a PDF you can print from any viewer.	以其他格式儲存副本。列印時會先產生 PDF，可在任何檢視器中列印。
 	Save As	另存新檔
 	Save as Template	另存為範本
+	Save to Bytes	儲存為位元組資料
 	Saved	已儲存
 	Search Commands	搜尋命令
 	Search commands and help	搜尋命令和說明

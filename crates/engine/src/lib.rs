@@ -8,6 +8,7 @@
 
 pub mod catalog;
 pub mod cmd;
+pub mod flow;
 pub mod io;
 mod io_ext;
 pub mod sample;

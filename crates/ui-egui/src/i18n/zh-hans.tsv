@@ -194,8 +194,10 @@
 	Distribute Rows	平均分布各行
 	Distributed	分散对齐
 	Do Not Show in TOC	不在目录中显示
+	Document as Flow	文档的 Flow 结构
 	Document End	文档结尾
 	Document Formatting	文档格式
+	Document from Flow	从 Flow 结构生成文档
 	Document Property	文档属性
 	Document Start	文档开头
 	Document Text	文档文本
@@ -394,6 +396,7 @@
 	Match case	区分大小写
 	Match Fields	匹配域
 	Matrix	矩阵
+	Media Bytes	媒体字节数据
 	Merge	合并
 	Merge Cells	合并单元格
 	Merge Formatting	合并格式
@@ -449,6 +452,7 @@
 	One	一栏
 	One Page	单页
 	Open	打开
+	Open from Bytes	从字节数据打开
 	OpenDocument Text (*.odt)	OpenDocument 文本 (*.odt)
 	Optional Hyphen	可选连字符
 	Options	选项
@@ -582,6 +586,7 @@
 	Save a copy in another format. Printing goes through a PDF you can print from any viewer.	以其他格式保存副本。打印时先生成 PDF，可在任意查看器中打印。
 	Save As	另存为
 	Save as Template	另存为模板
+	Save to Bytes	保存为字节数据
 	Saved	已保存
 	Search Commands	搜索命令
 	Search commands and help	搜索命令和帮助

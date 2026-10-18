@@ -104,6 +104,11 @@ the icon art).
 | M14 | 1.0 polish, packaging, signing | pipeline written; waiting on remote and secrets |
 
 ## Recently landed
+- Web library: `crates/wasm` (`wordcraft-wasm`, npm `@tutorfulhk/wordcraft-wasm`, tag `wasm-v*`)
+  is a headless WebAssembly build for web apps (run in a Web Worker): open/save DOCX and the other
+  formats, PDF export with embedded fonts (CJK fonts added at runtime), page PNGs, and
+  `file.flow` / `file.fromFlow` to and from Flow JSON (`docs/flow-json.md`), a block tree that
+  maps to a TipTap document (lists from Word numbering, task lists, table merges, pictures).
 - Text wraps around floating pictures and shapes; text boxes lay out their own text.
 - Table rows split across pages between lines (Can't Split honoured, header rows repeat).
 - Drop caps; automatic hyphenation with Word's 0.25" hyphenation zone; soft hyphens.
